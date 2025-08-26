@@ -16,7 +16,7 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "declaration": false,
-    "outDir": "../dist/server",
+    "outDir": "./dist/server",
     "baseUrl": ".",
     "paths": {
       "@/*": ["../client/src/*"],
