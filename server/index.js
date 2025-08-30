@@ -1,4 +1,3 @@
-
 import express from 'express';
 import session from 'express-session';
 import cors from 'cors';
@@ -248,7 +247,7 @@ async function startServer() {
     // Frontend serving
     if (process.env.NODE_ENV === 'production') {
       // Serve static files from React build
-      const buildPath = path.join(__dirname, '../dist/public');
+      const buildPath = path.join(__dirname, '../public');
       app.use(express.static(buildPath));
 
       // Handle React Router - send all non-API requests to index.html
